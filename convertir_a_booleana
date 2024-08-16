@@ -1,0 +1,9 @@
+def convertir_a_booleana(n):
+    if n == 0:
+        return "0"
+    else:
+        return convertir_a_booleana(n // 2) + str(n % 2)
+
+numero = 10
+print(f"La representación booleana de {numero} es {convertir_a_booleana(numero)}")
+
